@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://ck2541bsewf56"]
 
+[ext_resource type="Script" uid="uid://bpnjkp23hgdgc" path="res://Entities/player.gd" id="1_gb1tc"]
 [ext_resource type="Texture2D" uid="uid://xojo3gj2n2h5" path="res://Sprites/Ship.png" id="1_tcnsb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2actn"]
 
 [node name="Player" type="Node2D" unique_id=603300937]
+scale = Vector2(0.05, 0.05)
+script = ExtResource("1_gb1tc")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=799750649]
 
