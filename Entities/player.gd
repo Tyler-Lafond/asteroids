@@ -1,6 +1,5 @@
 extends Node2D
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -24,6 +23,7 @@ func _physics_process(delta):
 		rotation_degrees += rotation_speed * delta
 
 	position += velocity * delta
-
-
-
+	
+	var screen_size = get_viewport_rect().size
+	
+	position = Utils._wrap_around_screen(position.x, position.y, screen_size.x, screen_size.y)
