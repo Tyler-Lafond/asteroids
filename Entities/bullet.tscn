@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cvx7n1oy5gi7n"]
+
+[ext_resource type="Texture2D" uid="uid://tl3bk5bnlwqx" path="res://Sprites/Bullet.jpg" id="1_ceooe"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2actn"]
+
+[node name="Bullet" type="Node2D" unique_id=53592138]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=82716313]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1058504176]
+shape = SubResource("CapsuleShape2D_2actn")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=2022838303]
+texture = ExtResource("1_ceooe")

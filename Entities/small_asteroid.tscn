@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cfe35oyqckq1h"]
+
+[ext_resource type="Texture2D" uid="uid://ccplbyloh62lp" path="res://Sprites/Astroid.png" id="1_7fami"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2actn"]
+
+[node name="SmallAsteroid" type="Node2D" unique_id=143850923]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1674947442]
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1976750188]
+texture = ExtResource("1_7fami")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=726555032]
+shape = SubResource("CircleShape2D_2actn")
